@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Scripts/Zoomcam.cs">
     <Files>
-      <File FileName="Assets/_Scripts/Zoomcam.cs" Line="15" Column="2" />
+      <File FileName="Assets/_Scripts/Zoomcam.cs" Line="30" Column="38" />
+      <File FileName="../../Demo_enfoglobe/Assets/EasyTouchBundle/EasyTouch/Example/GameExemple/RTSExample/RTSCamera.cs" Line="41" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

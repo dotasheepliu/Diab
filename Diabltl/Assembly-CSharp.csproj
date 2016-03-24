@@ -138,6 +138,7 @@
      <Compile Include="Assets\TerrainComposer\Scripts\MultiTerrainBoost.cs" />
      <Compile Include="Assets\TerrainComposer\Scripts\rtp_functions.cs" />
      <Compile Include="Assets\UIControl.cs" />
+     <Compile Include="Assets\_Scripts\HPControl.cs" />
      <Compile Include="Assets\_Scripts\Zoomcam.cs" />
      <Compile Include="Assets\example.cs" />
      <Compile Include="Assets\test.cs" />
