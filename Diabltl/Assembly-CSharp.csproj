@@ -138,6 +138,7 @@
      <Compile Include="Assets\TerrainComposer\Scripts\MultiTerrainBoost.cs" />
      <Compile Include="Assets\TerrainComposer\Scripts\rtp_functions.cs" />
      <Compile Include="Assets\UIControl.cs" />
+     <Compile Include="Assets\_Scripts\HPControl.cs" />
      <Compile Include="Assets\_Scripts\Zoomcam.cs" />
      <Compile Include="Assets\example.cs" />
      <Compile Include="Assets\test.cs" />
@@ -156,6 +157,7 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
      <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\UI - BUILDER\Source Files\Fonts\OpenSans-Familiy\OpenSansLic.txt" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
