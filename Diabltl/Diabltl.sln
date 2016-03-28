@@ -5,6 +5,8 @@ Project("{ACA1C352-5068-7EDF-39F4-75939CC58503}") = "Diabltl", "Assembly-CSharp-
 EndProject
 Project("{ACA1C352-5068-7EDF-39F4-75939CC58503}") = "Diabltl", "Assembly-CSharp.csproj", "{91E2C941-7B4A-D4D2-879F-42C5CB019F80}"
 EndProject
+Project("{ACA1C352-5068-7EDF-39F4-75939CC58503}") = "Diabltl", "Assembly-CSharp-Editor-firstpass.csproj", "{25BF095B-2A6E-F522-C007-07964B1B613B}"
+EndProject
 Project("{ACA1C352-5068-7EDF-39F4-75939CC58503}") = "Diabltl", "Assembly-CSharp-Editor.csproj", "{F245FDEC-CB61-FE57-4AFC-1BD4BBB529BA}"
 EndProject
 Global
@@ -21,6 +23,10 @@ Global
 		{91E2C941-7B4A-D4D2-879F-42C5CB019F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91E2C941-7B4A-D4D2-879F-42C5CB019F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91E2C941-7B4A-D4D2-879F-42C5CB019F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25BF095B-2A6E-F522-C007-07964B1B613B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25BF095B-2A6E-F522-C007-07964B1B613B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25BF095B-2A6E-F522-C007-07964B1B613B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25BF095B-2A6E-F522-C007-07964B1B613B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F245FDEC-CB61-FE57-4AFC-1BD4BBB529BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F245FDEC-CB61-FE57-4AFC-1BD4BBB529BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F245FDEC-CB61-FE57-4AFC-1BD4BBB529BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
