@@ -15,12 +15,27 @@ public class dogmove : MonoBehaviour {
 	}
 
 	void EasyTouch_On_DoubleTap (Gesture gesture) {
-		if (!doglock) {
-			sugarlevel.GetComponent<sugarlevelshow> ().sugarlevelminusone ();
-			finalp = gesture.GetCurrentPickedObject ().transform.position;
-			transp = finalp - transform.position;
-			GetComponent<Animation> ().Play ("Walk Dog");
-			StartCoroutine (slowmove ());
+		switch (gesture.GetCurrentPickedObject ().name) {
+
+		case "BUD_Building_B_01":
+			if (!doglock) {
+				Debug.Log ("selected!");
+				finalp = gesture.GetCurrentPickedObject ().transform.position;
+				transp = new Vector3 (finalp.x - transform.position.x - 0.1f, 0, finalp.z - transform.position.z + 0.1f);
+				GetComponent<Animation> ().Play ("Run Dog");
+				StartCoroutine (movetofood ());
+			}
+			break;
+
+		default:
+			if (!doglock) {
+				sugarlevel.GetComponent<sugarlevelshow> ().sugarlevelminusone ();
+				finalp = gesture.GetCurrentPickedObject ().transform.position;
+				transp = finalp - transform.position;
+				GetComponent<Animation> ().Play ("Walk Dog");
+				StartCoroutine (slowmove ());
+			}
+			break;
 		}
 	}
 
@@ -41,6 +56,28 @@ public class dogmove : MonoBehaviour {
 			transform.position = new Vector3 (transform.position.x + speedx, transform.position.y + 0.001f, transform.position.z + speedz);
 		}
 		GetComponent<Animation> ().Play ("Idle Dog");
+		doglock = false;
+	}
+
+	IEnumerator movetofood () {
+		doglock = true;
+		transform.LookAt (new Vector3 (finalp.x, transform.position.y, finalp.z));
+		speedx = Mathf.Cos (Mathf.Atan (transp.z / transp.x)) * speed * 1.6f;
+		if (transp.x < 0)
+			speedx = -speedx;
+		speedz = Mathf.Sin (Mathf.Atan (transp.z / transp.x)) * speed * 1.6f;
+		if (transp.z < 0)
+			speedz = -Mathf.Abs (speedz);
+		else
+			speedz = Mathf.Abs (speedz);
+
+		for (int i = 0; i < Mathf.Abs (transp.x / speedx); i++) {
+			yield return new WaitForSeconds (0.01f);
+			transform.position = new Vector3 (transform.position.x + speedx, transform.position.y + 0.001f, transform.position.z + speedz);
+		}
+		GetComponent<Animation> ().Play ("Idle Dog");
+		yield return new WaitForSeconds (0.2f);
+		transform.LookAt (new Vector3 (finalp.x, transform.position.y, finalp.z));
 		doglock = false;
 	}
 }
