@@ -8,12 +8,15 @@ public class dogmove : MonoBehaviour {
 	private float speedx;
 	private float speedz;
 	public bool doglock = false;
+	public GameObject sugarlevel;
+
 	void OnEnable () {
 		EasyTouch.On_DoubleTap += EasyTouch_On_DoubleTap;
 	}
 
 	void EasyTouch_On_DoubleTap (Gesture gesture) {
 		if (!doglock) {
+			sugarlevel.GetComponent<sugarlevelshow> ().sugarlevelminusone ();
 			finalp = gesture.GetCurrentPickedObject ().transform.position;
 			transp = finalp - transform.position;
 			GetComponent<Animation> ().Play ("Walk Dog");
