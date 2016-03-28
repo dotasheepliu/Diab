@@ -156,6 +156,7 @@
      <Compile Include="Assets\_Scripts\Zoomcam.cs" />
      <Compile Include="Assets\_Scripts\dogmove.cs" />
      <Compile Include="Assets\example.cs" />
+     <Compile Include="Assets\sugarlevelshow.cs" />
      <Compile Include="Assets\test.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
