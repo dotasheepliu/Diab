@@ -19,12 +19,12 @@ public class Iconzoom : MonoBehaviour {
 			maincam.transform.position = new Vector3 (maincam.transform.position.x + moveposition.x * 0.03f, maincam.transform.position.y, maincam.transform.position.z + moveposition.z * 0.03f);
 		} 
 		EasyTouch.SetEnabled (true);
-		maincam.AddComponent<HighlightingRenderer> ();
-		dog.AddComponent<CSHighlighterController> ();
+		//maincam.AddComponent<HighlightingRenderer> ();
+		//dog.AddComponent<CSHighlighterController> ();
 		yield return new WaitForSeconds (1f);
-		Destroy (dog.GetComponent<CSHighlighterController> ());
-		Destroy (dog.GetComponent<Highlighter> ());
-		Destroy (maincam.GetComponent<HighlightingRenderer> ());
+//		Destroy (dog.GetComponent<CSHighlighterController> ());
+//		Destroy (dog.GetComponent<Highlighter> ());
+//		Destroy (maincam.GetComponent<HighlightingRenderer> ());
 	}
 		
 }
