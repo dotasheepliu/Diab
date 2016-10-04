@@ -1,2 +1,2 @@
 # Diabetic
-Teaching diabetic children some routine steps to restoring health.
+Teaching diabetic children some routine steps of restoring health.
